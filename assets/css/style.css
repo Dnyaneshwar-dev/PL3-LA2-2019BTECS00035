@@ -123,7 +123,6 @@ input[type=text], select, textarea {
 }
 .col{
     flex-basis:0;
-    -ms-flex-positive:1;
     flex-grow:1;
     max-width:100%
 
@@ -139,44 +138,34 @@ input[type=text], select, textarea {
 
 .card{
     position:relative;
-    display:-ms-flexbox;
+    display:flexbox;
     display:flex;
     flex-direction:column;
     min-width:0;
-    word-wrap:break-word
-    ;background-color:rgb(24, 22, 22);
+    word-wrap:break-word;
+    background-color:rgb(24, 22, 22);
     background-clip:border-box;
     border:1px solid rgba(0,0,0,.125);
     border-radius:.25rem
 }
+
 .card:hover{
     transform: scale(1.01);
 }
-.card>hr{
-    margin-right:0;
-    margin-left:0
-}
-.card>.list-group:first-child 
-.list-group-item:first-child{
-    border-top-left-radius:.25rem;
-    border-top-right-radius:.25rem
-}
-.card>.list-group:last-child .list-group-item:last-child{
-    border-bottom-right-radius:.25rem;
-    border-bottom-left-radius:.25rem
-}
+
 .card-body{
     
     flex:1 1 auto;
     padding:1.25rem
 }
+
 .bg-dark{
     background-color:#343a40!important
 }
-.bg-white{background-color:#fff!important}
-.collapse:not(.show){display:none}
 
-.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}
+.bg-white{background-color:#fff!important}
+
+
 
 .mr-2,.mx-2{margin-right:.5rem!important}
 
